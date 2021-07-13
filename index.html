@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="gasite/logo.png" type="logo/png">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/pizzaria.css">
+
+    <title>Pizzaria Lion</title>
+</head>
+
+<body>
+
+    <div style="overflow-x:auto;">
+        <table>
+            <tbody>
+
+                <tr>
+
+                    <th>
+                        <img src="gasite/logo.png" alt="logotipo" style="width: 275px ;">
+                    </th>
+                    <th>
+                        <div class="btn-group" role="group" aria-label="basic example">
+
+                            <!--<a href="index.html"> <button type="button" class="btn btn-danger">   TEXTO  </button></a>-->
+
+                            <a href="index.html" class="btn btn-danger"> Cardápio</a>
+                            <a href="sobrenos.html" class="btn btn-danger"> Sobre nós</a>
+                            <a href="localização.html" class="btn btn-danger"> Localização </a>
+                            <a href="pedido.html" class="btn btn-danger">Pedido</a>
+                        </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <!--<p class="solid"> -->
+        <div style="overflow-x:auto;">
+            <figure>
+                <table class="cardapio" style=" background: rgba(255, 0, 0, 0.486)">
+
+                    <tbody>
+
+                        <tr class="solid">
+
+                            <td>
+                                <br>
+                                <h3 style="background: rgba(255, 0, 0, 0.786)"> Pizza de Calabresa</h3>
+                                <img src="imagens_pizza/calabresa.jpg" alt="Pizza de Calabresa">
+
+                            </td>
+
+                            <td>
+
+                                <h2>Calabresa acompanhada de cebola, azeitonas verdes e
+                                    mussarela <br> --R$35,90--</h2>
+
+                            </td>
+                        </tr>
+
+                        <tr class="solid">
+                            <td>
+                                <br>
+                                <h3 style="background: rgba(255, 0, 0, 0.786)">Pizza de dois queijos</h3>
+                                <img src="imagens_pizza/dois_queijos.jpg" alt="Pizza de dois queijos"
+                                    style="width: 235px;">
+                                <br>
+                            </td>
+
+                            <td>
+
+                                <h2>Tiras de requeijão e alho. <br> --R$35,90--</h2>
+
+                            </td>
+                        </tr>
+
+                        <tr class="solid">
+                            <td>
+                                <br>
+                                <h3 style="background: rgba(255, 0, 0, 0.786)">Pizza de frango com catupiry</h3>
+                                <img src="imagens_pizza/frango_com_catupiry.jpg" alt="Pizza de frango com catupiry"
+                                    style="width: 235px;">
+                                <br>
+                            </td>
+
+                            <td>
+
+                                <h2>Frango desfiado, mussarela e requeijão cremoso <br>
+                                    --R$35,90--</h2>
+
+                            </td>
+                        </tr>
+
+                        <tr class="solid">
+                            <td>
+                                <br>
+                                <h3 style="background: rgba(255, 0, 0, 0.786)">Pizza de mussarela</h3>
+                                <img src="imagens_pizza/mussarela.jpg" alt="Pizza de mussarela" style="width: 235px;">
+                                <br>
+                            </td>
+
+                            <td>
+
+                                <h2>Queijo mussarela servido sobre molho de tomates.
+                                    <br>--R$31,90--
+                                </h2>
+
+                            </td>
+                        </tr>
+
+
+
+                        <tr class="solid">
+                            <td>
+                                <br>
+                                <h3 style="background: rgba(255, 0, 0, 0.786)">Pizza de napolitano</h3>
+                                <img src="imagens_pizza/napolitano.jpg" alt="Pizza de napolitano" style="width: 235px;">
+                                <br>
+                            </td>
+                            <td>
+
+                                <h2>Parmesão, mussarela, rodelas de tomates, orégano e alho. <br>
+                                    --R$32,90--</h2>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+
+                </table>
+            </figure>
+        </div>
+
+        <br>
+
+        <a href="pedido.html" id="btpedido" class="btn- btn-info btn-lg btn-block">Pedir</a>
+
+
+        <br><br><br>
+        <!--  <form>
+            <fieldset class="form">
+                <legend>Pizza</legend>
+                <input type="checkbox" name="novaopcao" value="PizzadeCalabresa"> Pizza de Calabresa <br>
+                <input type="checkbox" name="novaopcao" value="Pizzadedoisqueijos"> Pizza de dois queijos <br>
+                <input type="checkbox" name="novaopcao" value="pizzafrangocomcatupiry"> Pizza de frango com catupiry
+                <br>
+                <input type="checkbox" name="novaopcao" value="pizzademussarela"> Pizza de mussarela <br>
+                <input type="checkbox" name="novaopcao" value="pizzadenapolitano"> Pizza de napolitano
+                <div class="button">
+                    <legend>Forma de Pagamento</legend>
+                <input type="radio" name="pagar" value="debito"> Débito <br>
+                <input type="radio" name="pagar" value="credito"> Crédito <br>
+                <input type="radio" name="pagar" value="Dinheiro"> Dinheiro <br>
+                <input type="radio" name="pagar" value="PIX"> PIX <br>
+
+                    <button type="submit">Enviar pedido</button>
+                    <button type="reset">Limpar pedido</button>
+                    <br><br><br>
+                </div>
+            </fieldset>
+        </form>-->
+    </div>
+    <p class="vcss">
+        <a href="http://css-validator.org/check/referer">
+            <img style="border: 0; width: 88px; height: 31px" src="imagens_pizza/vcss.png"
+                alt="CSS válido!" />
+        </a>
+    </p>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
