@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="gasite/logo.png" type="logo/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pizzaria.css">
+
+
+    <title>Pedido - Pizzaria Lion</title>
+</head>
+
+<body>
+
+    <div style="overflow-x:auto;">
+        <table>
+            <tbody>
+
+                <tr>
+                    <th>
+                        <img src="gasite/logo.png" alt="logotipo" style="width: 275px ;">
+                    </th>
+                    <th>
+                        <div class="btn-group" role="group" aria-label="basic example">
+
+                            <a href="index.html" class="btn btn-danger">Cardápio</a>
+                            <a href="sobrenos.html" class="btn btn-danger">Sobre nós</a>
+                            <a href="localização.html" class="btn btn-danger">Localização</a>
+                            <a href="pedido.html" class="btn btn-danger">Pedido</a>
+                        </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+
+        <br><br>
+        <form>
+            <fieldset  >
+                <div class="formpizza" style="background: rgba(255, 0, 0, 0.786)">
+                <legend class="titulopedido" style=" background: rgba(255, 0, 0)">Pizza</legend>
+                <input type="checkbox" name="novaopcao" value="PizzadeCalabresa"> Pizza de Calabresa <br>
+                <input type="checkbox" name="novaopcao" value="Pizzadedoisqueijos"> Pizza de dois queijos <br>
+                <input type="checkbox" name="novaopcao" value="pizzafrangocomcatupiry"> Pizza de frango com catupiry
+                <br>
+                <input type="checkbox" name="novaopcao" value="pizzademussarela"> Pizza de mussarela <br>
+                <input type="checkbox" name="novaopcao" value="pizzadenapolitano"> Pizza de napolitano<br>
+                <br>
+                <label for="msg">Observação:</label><br>
+                <textarea id="msg" placeholder="Deixe uma obervação sobre o pedido!"> </textarea>
+                </div>
+                
+
+
+                <hr class="linha">
+
+                <div class="selectDiv">
+                    <br>
+                    <select class="form-control" name="bebida" id="bebida">
+                        <option value="default" class="optionName" selected disabled>
+                            Escolha a Bebida
+                        </option>
+
+                        <option value="default" class="optionName" disabled> </option>
+
+                        <option value="default" class="optionName" disabled>
+                            -- Refrigerantes--
+                        </option>
+                        <option value="fanta-uva" class="optionName">
+                            Fanta Uva 2 Lts &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            &nbsp;&nbsp; &nbsp;-- R$7,50 --
+                        </option>
+                        <option value="fanta-laranja" class="optionName">
+                            Fanta Laranja 2 Lts &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;--
+                            R$7,50
+                            --
+                        </option>
+                        <option value="fanta-guarana-2lts" class="optionName">
+                            Fanta Guaraná 2 Lts &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-- R$7,50 --
+                        </option>
+                        <option value="guarana-antartica" class="optionName">
+                            Guaraná Antártica 2 Lts &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-- R$7,90 --
+                        </option>
+                        <option value="coca-2lts" class="optionName">
+                            Coca-Cola 2 Lts &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            &nbsp;&nbsp;
+                            &nbsp;-- R$8,50 --
+                        </option>
+                        <option value="coca-zero-2lts" class="optionName">
+                            Coca-Cola Zero 2 Lts &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; -- R$8,00 --
+                        </option>
+                        <option value="Sprite-2lts" class="optionName">
+                            Sprite 2 Lts &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;-- R$7,50 --
+                        </option>
+                        <option value="dolly-guara-2l" class="optionName">
+                            Dolly Guaraná 2 Lts &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;-- R$7,00 --
+                        </option>
+                        <option value="dolly-limao-2l" class="optionName">
+                            Dolly Limão 2 Lts &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            &nbsp;-- R$7,00 --
+                        </option>
+
+
+                        <option value="fanta-uva-600ml" class="optionName">
+                            Fanta Uva 600ml &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            &nbsp;-- R$6,00 --
+                        </option>
+                        <option value="fanta-laranja-600ml" class="optionName">
+                            Fanta Laranja 600ml &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-- R$6,00 --
+                        </option>
+                        <option value="fanta-guara-600ml" class="optionName">
+                            Fanta Guaraná 600ml&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-- R$6,00 --
+                        </option>
+                        <option value="guarana-antar-600ml" class="optionName">
+                            Guaraná Antártica 600ml &nbsp;&nbsp;&nbsp; &nbsp;-- R$6,00 --
+                        </option>
+                        <option value="coca-600ml" class="optionName">
+                            Coca-Cola 600ml &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--
+                            R$6,00 --
+                        </option>
+                        <option value="coca-zero-600ml" class="optionName">
+                            Coca-Cola Zero 600ml &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;-- R$6,00 --
+                        </option>
+
+
+
+                        <option value="coca-lata" class="optionName">
+                            Coca-Cola Lata 350ml &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$4,50 --
+                        </option>
+                        <option value="coca-zero-lata" class="optionName">
+                            Coca-Cola Zero Lata 350ml&nbsp; -- R$4,50 --
+                        </option>
+                        <option value="fanta-lata" class="optionName">
+                            Fanta Guaraná Lata 350ml &nbsp;&nbsp;&nbsp;-- R$4,50 --
+                        </option>
+
+                        <option value="default" class="optionName" disabled> </option>
+
+                        <option value="default" class="optionName" disabled>
+                            --Águas--
+                        </option>
+                        <option value="agua-gas" class="optionName">
+                            Água com Gás 500ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--
+                            R$2,00
+                            --
+                        </option>
+                        <option value="agua" class="optionName">
+                            Água sem Gás 500ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--
+                            R$2,00
+                            --
+                        </option>
+                        <option value="h2oh" class="optionName">
+                            H2OH! Limão 500ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --
+                            R$3,00
+                            --
+                        </option>
+
+                        <option value="default" class="optionName" disabled> </option>
+
+                        <option value="default" class="optionName" disabled>
+                            --Sucos--
+                        </option>
+                        <option value="suco-maracuja" class="optionName">
+                            Suco de Maracujá 290ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- R$3,50 --
+                        </option>
+                        <option value="suco-pessego" class="optionName">
+                            Suco de Pêssego 290ml &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- R$3,50 --
+                        </option>
+                        <option value="suco-uva" class="optionName">
+                            Suco de Uva 290ml &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- R$3,50 --
+                        </option>
+                    </select>
+                </div>
+                <hr class="linha">
+                <form>
+                    <fieldset class="formpag" style="background: rgba(255, 0, 0, 0.786)">
+                        <legend class="titulopedido" style=" background: rgba(255, 0, 0)">Forma de Pagamento</legend>
+                        <input type="radio" name="pagar" value="debito"> Débito <br>
+                        <input type="radio" name="pagar" value="credito"> Crédito <br>
+                        <input type="radio" name="pagar" value="Dinheiro"> Dinheiro <br>
+                        <input type="radio" name="pagar" value="PIX"> PIX <br>
+
+                    </fieldset>
+                </form>
+                <div class="divider"></div>
+               
+
+                <div class="infos">
+                    <div class="infoSubtitle">Suas informações</div>
+                    <div class="personalInfo">
+                        <center>
+                            <div class="leftPersonal sidesPersonal">
+                                <div class="personalInfoDiv" title="Informe o seu nome">
+                                    <label for="nome" title="Informe o seu nome">Nome: </label>
+                                    <input title="Informe o seu nome" class="form-control nomeInput" type="text"
+                                        name="nome" id="nome" required
+                                        oninvalid="this.setCustomValidity('Por favor, informe-nos o seu nome!')"
+                                        oninput="this.setCustomValidity('')" />
+                                </div>
+                                <div class="personalInfoDiv telInfoDiv" title="Informe o seu número de telefone">
+                                    <div class="subInfoDiv" title="Informe o seu número de telefone">
+                                        <label for="numero"
+                                            title="Informe o seu número de telefone">Número:&nbsp;&nbsp;+55
+                                        </label>
+                                        <input title="Informe o seu número de telefone" class="form-control telInput"
+                                            type="tel" name="numero" id="numero" pattern="9[0-9]{4}-[0-9]{4}" required
+                                            oninvalid="this.setCustomValidity('Por favor, insira o seu número corretamente!')"
+                                            oninput="this.setCustomValidity('')" />
+                                    </div>
+                                </div>
+                                <div class="personalInfoDiv" title="Informe o seu endereço">
+                                    <div class="subInfoDiv placeInfoDiv" title="Informe o seu endereço">
+                                        <div class="subPlaceInfoDiv enderecoDiv" title="Informe o seu endereço">
+                                            <label for="endereco" title="Informe o seu endereço">Endereço:
+                                            </label>
+                                            <input title="Informe o seu endereço" class="form-control enderecoInput"
+                                                type="text" name="endereco" id="endereco" required
+                                                oninvalid="this.setCustomValidity('Insira seu endereço como Rua Pizzaria De Gustta')"
+                                                oninput="this.setCustomValidity('')" />
+                                        </div>
+                                        <div class="subPlaceInfoDiv complementoDiv"
+                                            title="Informe o complemento, caso haja">
+                                            <label for="complemento"
+                                                title="Informe o complemento, caso haja">Complemento:
+                                            </label>
+                                            <input title="Informe o complemento, caso haja"
+                                                class="form-control complementoInput" type="text" name="complemento"
+                                                id="complemento"
+                                                oninvalid="this.setCustomValidity('Insira seu endereço como Rua Pizzaria De Gustta')"
+                                                oninput="this.setCustomValidity('')" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="divider"></div>
+
+                </div>
+                <div>
+
+                    <button type="submit" class="button">Enviar pedido</button>
+                    <button type="reset" class="button">Limpar pedido 3</button>
+                    <br><br><br>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+
+
+
+
+    <p class="vcss">
+        <a href="http://css-validator.org/check/referer">
+            <img style="border: 0; width: 88px; height: 31px" src="imagens_pizza/vcss.png" alt="CSS válido!" />
+        </a>
+    </p>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
