@@ -44,12 +44,14 @@ table {
     color: white;
     width: 249px;
     height: 287px;
+    border-radius: 10px;
 }
 
 .formpag {
     color: white;
     width: 249px;
     height: 170px;
+    border-radius: 10px;
 }
 
 .sobre {
