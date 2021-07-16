@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="gasite/logo.png" type="logo/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/pizzaria.css">
+
+    <title>Entrega - Pizzaria Lion</title>
+</head>
+
+<body>
+
+    <div style="overflow-x:auto;">
+        <table>
+            <tbody>
+
+                <tr>
+                    <th>
+                        <img src="gasite/logo.png" alt="logotipo" style="width: 275px ;">
+                    </th>
+                    <th>
+                        <div class="btn-group" role="group" aria-label="basic example">
+
+                            <a href="index.html" class="btn btn-danger">Cardápio</a>
+                            <a href="sobrenos.html" class="btn btn-danger">Sobre nós</a>
+                            <a href="localização.html" class="btn btn-danger">Localização</a>
+                            <a href="pedido.html" class="btn btn-danger">Pedido</a>
+                        </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <fieldset>
+            <form>
+                <div class="infos">
+                    <div class="infoSubtitle">Suas informações</div>
+                    <div class="personalInfo">
+                        <center>
+                            <div class="leftPersonal sidesPersonal">
+                                <div class="personalInfoDiv" title="Informe o seu nome">
+                                    <label for="nome" title="Informe o seu nome">Nome: </label>
+                                    <input title="Informe o seu nome" class="form-control nomeInput" type="text"
+                                        name="nome" id="nome" required
+                                        oninvalid="this.setCustomValidity('Por favor, informe-nos o seu nome!')"
+                                        oninput="this.setCustomValidity('')" />
+                                </div>
+                                <div class="personalInfoDiv telInfoDiv" title="Informe o seu número de telefone">
+                                    <div class="subInfoDiv" title="Informe o seu número de telefone">
+                                        <label for="numero"
+                                            title="Informe o seu número de telefone">Número:&nbsp;&nbsp;+55
+                                        </label>
+                                        <input title="Informe o seu número de telefone" class="form-control telInput"
+                                            type="tel" name="numero" id="numero" pattern="9[0-9]{4}[0-9]{4}" required
+                                            oninvalid="this.setCustomValidity('Por favor, insira o seu número corretamente!')"
+                                            oninput="this.setCustomValidity('')" />
+                                    </div>
+                                </div>
+                                <div class="personalInfoDiv" title="Informe o seu endereço">
+                                    <div class="subInfoDiv placeInfoDiv" title="Informe o seu endereço">
+                                        <div class="subPlaceInfoDiv enderecoDiv" title="Informe o seu endereço">
+                                            <label for="endereco" title="Informe o seu endereço">Endereço:
+                                            </label>
+                                            <input title="Informe o seu endereço" class="form-control enderecoInput"
+                                                type="text" name="endereco" id="endereco" required
+                                                oninvalid="this.setCustomValidity('Insira seu endereço como Rua Pizzaria De Gustta')"
+                                                oninput="this.setCustomValidity('')" />
+                                        </div>
+                                        <div class="subPlaceInfoDiv complementoDiv"
+                                            title="Informe o complemento, caso haja">
+                                            <label for="complemento"
+                                                title="Informe o complemento, caso haja">Complemento:
+                                            </label>
+                                            <input title="Informe o complemento, caso haja"
+                                                class="form-control complementoInput" type="text" name="complemento"
+                                                id="complemento"
+                                                oninvalid="this.setCustomValidity('Insira seu endereço como Rua Pizzaria De Gustta')"
+                                                oninput="this.setCustomValidity('')" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+
+
+                <div>
+                    <button type="reset" class="button">Limpar pedido </button>
+                    <button type="submit" class="button">Enviar pedido </button>
+                    <br><br><br>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
